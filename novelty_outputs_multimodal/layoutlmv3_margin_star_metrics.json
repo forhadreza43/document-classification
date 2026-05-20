@@ -1,0 +1,34 @@
+{
+  "checkpoint": "checkpoints\\layoutlmv3_margin_star.pt",
+  "split": {
+    "train_samples": 50000,
+    "val_samples": 6250,
+    "test_samples": 6250
+  },
+  "tpr_target": 0.95,
+  "theta": -1.8646025657653809,
+  "knn": {
+    "fpr_at_tpr": 46.9639794168096,
+    "auc": 92.24598284734135,
+    "f1": 79.98526703499078,
+    "cov": 59.236224768139664
+  },
+  "knn_star": {
+    "fpr_at_tpr": 69.26243567753002,
+    "auc": 90.23508473413379,
+    "f1": 80.80141245106319,
+    "cov": 57.42498636115657
+  },
+  "artifacts": {
+    "id_scores_knn": "layoutlmv3_margin_star_id_scores_knn.npy",
+    "ood_scores_knn": "layoutlmv3_margin_star_ood_scores_knn.npy",
+    "id_scores_knn_star": "layoutlmv3_margin_star_id_scores_knn_star.npy",
+    "ood_scores_knn_star": "layoutlmv3_margin_star_ood_scores_knn_star.npy",
+    "id_pred_labels": "layoutlmv3_margin_star_id_pred_labels.npy",
+    "id_nn_labels": "layoutlmv3_margin_star_id_nn_labels.npy",
+    "ood_pred_labels": "layoutlmv3_margin_star_ood_pred_labels.npy",
+    "ood_nn_labels": "layoutlmv3_margin_star_ood_nn_labels.npy",
+    "id_test_y_true": "layoutlmv3_margin_star_id_test_y_true.npy",
+    "theta": -1.8646025657653809
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "checkpoint": "checkpoints\\bert_margin_star.pt",
+  "target_pre": 99.0,
+  "train_samples": 50000,
+  "val_samples": 6250,
+  "test_samples": 6250,
+  "knn": {
+    "theta": -0.5404161214828491,
+    "target_met": false,
+    "calib_pre": 91.87253848907984,
+    "pre": 90.90574374079529,
+    "rec": 39.504,
+    "f1": 55.07472674548294,
+    "cov": 32.0358115998443
+  },
+  "knn_star": {
+    "theta": -0.37593546509742737,
+    "target_met": true,
+    "calib_pre": 99.0453460620525,
+    "pre": 98.50249584026622,
+    "rec": 18.944,
+    "f1": 31.77670424047236,
+    "cov": 15.362657324510185
+  }
+}

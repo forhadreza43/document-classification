@@ -1,0 +1,34 @@
+{
+  "checkpoint": "checkpoints\\bert_margin_star.pt",
+  "split": {
+    "train_samples": 50000,
+    "val_samples": 6250,
+    "test_samples": 6250
+  },
+  "tpr_target": 0.95,
+  "theta": -1.7037107944488525,
+  "knn": {
+    "fpr_at_tpr": 54.6483704974271,
+    "auc": 89.19074305317324,
+    "f1": 69.27049239944724,
+    "cov": 51.95853791598473
+  },
+  "knn_star": {
+    "fpr_at_tpr": 55.33447684391081,
+    "auc": 85.38238902229847,
+    "f1": 71.14290359291174,
+    "cov": 47.746863066012004
+  },
+  "artifacts": {
+    "id_scores_knn": "bert_margin_star_id_scores_knn.npy",
+    "ood_scores_knn": "bert_margin_star_ood_scores_knn.npy",
+    "id_scores_knn_star": "bert_margin_star_id_scores_knn_star.npy",
+    "ood_scores_knn_star": "bert_margin_star_ood_scores_knn_star.npy",
+    "id_pred_labels": "bert_margin_star_id_pred_labels.npy",
+    "id_nn_labels": "bert_margin_star_id_nn_labels.npy",
+    "ood_pred_labels": "bert_margin_star_ood_pred_labels.npy",
+    "ood_nn_labels": "bert_margin_star_ood_nn_labels.npy",
+    "id_test_y_true": "bert_margin_star_id_test_y_true.npy",
+    "theta": -1.7037107944488525
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "checkpoint": "checkpoints\\layoutlmv3_margin_star.pt",
+  "target_pre": 99.0,
+  "train_samples": 50000,
+  "val_samples": 6250,
+  "test_samples": 6250,
+  "knn": {
+    "theta": -0.4275926947593689,
+    "target_met": true,
+    "calib_pre": 99.01429275505174,
+    "pre": 99.32502596053997,
+    "rec": 30.608,
+    "f1": 46.795499021526425,
+    "cov": 24.821590761645258
+  },
+  "knn_star": {
+    "theta": -0.5154315233230591,
+    "target_met": true,
+    "calib_pre": 99.02491874322861,
+    "pre": 98.9602007888132,
+    "rec": 44.16,
+    "f1": 61.06870229007634,
+    "cov": 35.81159984429739
+  }
+}

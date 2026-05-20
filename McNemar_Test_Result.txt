@@ -1,0 +1,10 @@
+Contingency Table:
+n11 (both correct) = 105
+n00 (both wrong)   = 261
+n10 (text correct, multi wrong) = 20
+n01 (text wrong, multi correct) = 864
+McNemar Test Result:
+chi2 statistic = 803.901584
+p-value = < 10⁻⁵⁰
+Odds Ratio = 43.20
+Result: Statistically significant (p < 0.05)
