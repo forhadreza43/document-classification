@@ -33,10 +33,10 @@ class TrainConfig:
 
 @dataclass
 class LossConfig:
-    alpha: float = 1.5   # Margin*
-    beta: float = 0.5
-    lam: float = 4.0
-    eps: float = 1e-12
+    alpha: float = 1.5   # Margin for contrastive loss
+    beta: float = 0.5   # 
+    lam: float = 4.0    #loss balance
+    eps: float = 1e-12 
 
 @dataclass
 class OODConfig:

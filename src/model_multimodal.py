@@ -31,5 +31,5 @@ class LayoutLMv3DocClassifier(nn.Module):
         )
         last_hidden = out.last_hidden_state
         h = last_hidden[:, 0, :]   # CLS token
-        logits = self.classifier(h)
+        logits = self.classifier(h) #logits
         return logits, h

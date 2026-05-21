@@ -85,7 +85,7 @@ def knn_predict_no_agreement(train_index: FaissKNNIndex, embeddings: np.ndarray,
 
     for i in range(embeddings.shape[0]):
         score, _, _ = knn1_score_and_neighbor(train_index, embeddings[i])
-        if score >= theta:
+        if score >= theta:   #checking threshold
             is_id[i] = True
             out_label[i] = pred[i]
         else:
@@ -101,14 +101,15 @@ def knn_star_predict(train_index: FaissKNNIndex, embeddings: np.ndarray, logits:
     out_label = np.full((embeddings.shape[0],), -1, dtype=np.int64)
 
     for i in range(embeddings.shape[0]):
+        #identifying score and knn label
         score, _, nn_label = knn1_score_and_neighbor(train_index, embeddings[i])
 
-        if pred[i] != nn_label:
+        if pred[i] != nn_label: #checking results from logits and knn
             is_id[i] = False
             out_label[i] = -1
             continue
 
-        if score >= theta:
+        if score >= theta: #checking threshold
             is_id[i] = True
             out_label[i] = pred[i]
         else:
